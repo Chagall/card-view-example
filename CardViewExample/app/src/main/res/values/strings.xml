@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Card View Example</string>
+    <string name="memorial_description">Maurren Higa Maggi (São Carlos, 25 de junho de 1976) é uma ex-atleta, saltadora e velocista brasileira. Tornou-se o maior nome da história do atletismo feminino do Brasil ao ganhar a medalha de ouro no salto em distância dos Jogos Olímpicos de Pequim, em 2008, saltando 7,04 metros.</string>
+    <string name="ver_mais">Ver detalhes</string>
+
+
+    <string name="parque_bicao_title">Parque do Bicão</string>
+    <string name="parque_bicao_description">O Parque do Bicão, conhecido antigamente como Parque do Turco é uma área verde localizada na cidade de São Carlos. O local foi revitalizado em resposta à pressão de moradores da área que questionavam o abandono do parque.</string>
+</resources>
