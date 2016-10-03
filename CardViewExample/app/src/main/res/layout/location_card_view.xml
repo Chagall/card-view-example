@@ -27,15 +27,15 @@
                 android:layout_height="150dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/memorial_maurren_maggie" />
+                android:src="@drawable/memorial_maurren_maggie"
+                android:contentDescription="@string/card_view_image_content_description" />
             <TextView
                 android:id="@+id/card_view_location_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:textAlignment="center"
-                android:text="Memorial Maurren Maggie"
-                android:fontFamily="sans-serif"
+                android:text="@string/memorial_maurren_maggie_sc"
                 android:textSize="26sp"
                 android:textColor="@android:color/white"
                 android:background="#60000000"
@@ -78,7 +78,6 @@
             android:gravity="center"
             android:text="@string/ver_mais"
             android:textAlignment="center"
-            android:fontFamily="sans-serif"
             android:textStyle="bold"
             android:textSize="16sp"
             fontPath="fonts/Roboto-Regular.ttf"/>

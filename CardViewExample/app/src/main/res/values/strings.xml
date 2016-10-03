@@ -1,9 +1,21 @@
 <resources>
     <string name="app_name">Card View Example</string>
-    <string name="memorial_description">Maurren Higa Maggi (São Carlos, 25 de junho de 1976) é uma ex-atleta, saltadora e velocista brasileira. Tornou-se o maior nome da história do atletismo feminino do Brasil ao ganhar a medalha de ouro no salto em distância dos Jogos Olímpicos de Pequim, em 2008, saltando 7,04 metros.</string>
     <string name="ver_mais">Ver detalhes</string>
+    <string name="card_view_image_content_description">Card View Image</string>
 
+    <string name="memorial_maurren_maggie_sc">Memorial Maurren Maggie</string>
+    <string name="memorial_description">Maurren Higa Maggi (São Carlos, 25 de junho de 1976) é uma ex-atleta, saltadora e velocista brasileira. Tornou-se o maior nome da história do atletismo feminino do Brasil ao ganhar a medalha de ouro no salto em distância dos Jogos Olímpicos de Pequim, em 2008, saltando 7,04 metros.</string>
 
-    <string name="parque_bicao_title">Parque do Bicão</string>
+    <string name="parque_bicao_sc">Parque do Bicão</string>
     <string name="parque_bicao_description">O Parque do Bicão, conhecido antigamente como Parque do Turco é uma área verde localizada na cidade de São Carlos. O local foi revitalizado em resposta à pressão de moradores da área que questionavam o abandono do parque.</string>
+
+    <string name="rodoviaria_sc">Rodoviária Dr. Paulo Egydio</string>
+    <string name="rodoviaria_description">O Terminal Rodoviário de São Carlos (nome oficial Terminal Rodoviário Paulo Egydio Martins), mais conhecido como Rodoviária de São Carlos, ou Estação Rodoviária, é uma rodoviária que funciona como terminal de passageiros e cargas de forma ininterrupta. Situado na cidade de São Carlos, foi inaugurado em 12 de outubro de 1982, no final da gestão do Governador Paulo Salim Maluf sendo que o governador em exercício era José Maria Marin. Situa-se na rua Jacinto Favoreto, 777, no bairro Macarengo, zona norte da cidade. O acesso pode ser feito por ônibus, táxis e autos. A nova rodoviária, foi construída para substituir a antiga que ficava ao lado da estação ferroviária e que já estava desativada há mais de vinte anos.</string>
+
+    <string name="ferrovia_sc">Estação Ferroviária de São Carlos</string>
+    <string name="ferrovia_description">Estação Ferroviária de São Carlos mais conhecida como Estação de São Carlos ou Estação da Fepasa ou ainda Estação Cultura, é a antiga estação de trem localizada na cidade de São Carlos estado de São Paulo. Aberta em 1884 e o prédio atual em 1908 e inaugurado em 1912. Foi a primeira estação de trem do prolongamento da "The Rio Claro", que à Companhia Paulista de Estradas de Ferro derrubou, e fez uma nova estação que é o prédio atual.</string>
+
+    <string name="catedral_sc">Catedral de São Carlos</string>
+    <string name="catedral_description">A Catedral de São Carlos ou Catedral São Carlos Borromeu está localizada na Praça Dom José Marcondes Homem de Melo, em São Carlos (São Paulo). Com uma cúpula com mais de 70 metros de altura e 30 metros de diâmetro, é uma réplica arquitetônica da Basílica de São Pedro no Vaticano. A catedral está construída no local onde se ergueu a primeira capela, entre as ruas Conde do Pinhal e Treze de Maio, na área central. O projeto é do professor Ernfried Frick e conta com vitrais de Helmar, os altares são em mármore carrara e a Via Sacra foi executada pela artista de São Carlos "Almira Ragonesi Bruno". A imagem de São Carlos Borromeu da época de fundação da cidade, com a cabeça e mãos esculpidas em madeira, está na Catedral.</string>
 </resources>
+
