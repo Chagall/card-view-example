@@ -1,4 +1,4 @@
-package com.pereira.fabio.cardviewexample;
+package com.pereira.fabio.cardviewexample.controller;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
+import com.pereira.fabio.cardviewexample.R;
+import com.pereira.fabio.cardviewexample.model.PointOfInterest;
 
 import java.util.ArrayList;
 

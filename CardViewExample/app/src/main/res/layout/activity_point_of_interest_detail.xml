@@ -7,7 +7,7 @@
     android:id="@+id/activity_point_of_interest_detail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pereira.fabio.cardviewexample.PointOfInterestDetailActivity">
+    tools:context="com.pereira.fabio.cardviewexample.controller.PointOfInterestDetailActivity">
 
     <ImageView
         android:layout_width="0dp"

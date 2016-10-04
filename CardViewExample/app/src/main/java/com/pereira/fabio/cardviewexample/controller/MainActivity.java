@@ -1,4 +1,4 @@
-package com.pereira.fabio.cardviewexample;
+package com.pereira.fabio.cardviewexample.controller;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import com.pereira.fabio.cardviewexample.R;
+import com.pereira.fabio.cardviewexample.listener.RecyclerItemClickListener;
+import com.pereira.fabio.cardviewexample.model.PointOfInterest;
+import com.pereira.fabio.cardviewexample.model.Rating;
 
 import java.util.ArrayList;
 
@@ -49,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         if (locationRecyclerView != null) {
             locationRecyclerView.addOnItemTouchListener(new RecyclerItemClickListener(this, locationRecyclerView, new RecyclerItemClickListener.OnItemClickListener() {
                 @Override
-                public void onItemClick(View view, int position) {
+                public void onItemClick(final View view, final int position) {
                     Intent poiDetailIntent = new Intent(MainActivity.this, PointOfInterestDetailActivity.class);
                     Bundle poiDetailBundle = new Bundle();
                     poiDetailBundle.putInt("poi_position", position);
@@ -70,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             }));
         }
     }
+
 
 }
 

@@ -1,4 +1,4 @@
-package com.pereira.fabio.cardviewexample;
+package com.pereira.fabio.cardviewexample.controller;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.Toast;
+
+import com.pereira.fabio.cardviewexample.R;
 
 public class PointOfInterestDetailActivity extends AppCompatActivity {
 

@@ -1,4 +1,6 @@
-package com.pereira.fabio.cardviewexample;
+package com.pereira.fabio.cardviewexample.model;
+
+import com.pereira.fabio.cardviewexample.utils.Utils;
 
 import java.util.ArrayList;
 
@@ -27,17 +29,17 @@ public class Rating {
     public Rating() {
         this.averageRating = 0;
         this.numberOfVotes = 0;
-        this.ratingCountArrayList = new ArrayList<>();
+        this.ratingCountArrayList = Utils.createDefaulRatingCountList();
     }
 
     public Rating(float avgRating, long numOfVotes, ArrayList<Long> ratingCountArrayList) {
         this.averageRating = avgRating;
         this.numberOfVotes = numOfVotes;
-        if(ratingCountArrayList != null && ratingCountArrayList.size() > 0) {
+        if(ratingCountArrayList != null && ratingCountArrayList.size() == 5) {
             this.ratingCountArrayList = ratingCountArrayList;
         }
         else {
-            this.ratingCountArrayList = new ArrayList<>();
+            this.ratingCountArrayList = Utils.createDefaulRatingCountList();
         }
     }
 
