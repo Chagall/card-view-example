@@ -15,7 +15,7 @@ public class User {
     private String email;
     private String password;
     private String username;
-    private long signUpTimestamp;
+    private long registrationTimestamp;
     private String name;
     private Utils.Gender gender;
     private long birthDate;
@@ -30,7 +30,7 @@ public class User {
         this.email = "";
         this.password = "";
         this.username = "";
-        this.signUpTimestamp = 0L;
+        this.registrationTimestamp = 0L;
         this.name = "";
         this.gender = Utils.Gender.female;
         this.birthDate = 0L;
@@ -38,7 +38,7 @@ public class User {
         this.location = "";
     }
 
-    public User(String email, String password, String username, long signUpTimestamp,
+    public User(String email, String password, String username, long registrationTimestamp,
             String name, Utils.Gender gender, long birthDate, String bio, String location){
 
         if(email != null && email.length() > 0) {
@@ -62,7 +62,7 @@ public class User {
             this.username = "";
         }
 
-        this.signUpTimestamp = signUpTimestamp;
+        this.registrationTimestamp = registrationTimestamp;
 
         if(name != null && name.length() > 0){
             this.name = name;
@@ -107,8 +107,8 @@ public class User {
         this.username = username;
     }
 
-    public void setSignUpTimestamp(long signUpTimestamp) {
-        this.signUpTimestamp = signUpTimestamp;
+    public void setRegistrationTimestamp(long registrationTimestamp) {
+        this.registrationTimestamp = registrationTimestamp;
     }
 
     public void setName(String name) {
@@ -147,8 +147,8 @@ public class User {
         return username;
     }
 
-    public long getSignUpTimestamp() {
-        return signUpTimestamp;
+    public long getRegistrationTimestamp() {
+        return registrationTimestamp;
     }
 
     public String getName() {
