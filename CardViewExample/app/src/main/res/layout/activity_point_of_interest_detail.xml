@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_point_of_interest_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pereira.fabio.cardviewexample.PointOfInterestDetailActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        app:srcCompat="@drawable/pista_skate_santa_felicia"
+        android:id="@+id/poi_detail_image_view"
+        app:layout_constraintTop_toTopOf="@+id/activity_point_of_interest_detail"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_point_of_interest_detail"
+        app:layout_constraintRight_toRightOf="@+id/activity_point_of_interest_detail"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto do Local" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/poi_detail_rating_bar"
+        android:numStars="5"
+        app:layout_constraintTop_toTopOf="@+id/poi_detail_image_view"
+        app:layout_constraintRight_toRightOf="@+id/poi_detail_image_view"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:rating="5"
+        android:stepSize=".5" />
+
+    <TextView
+        android:text="Local:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/poi_detail_location_name_text_view"
+        app:layout_constraintBaseline_toBaselineOf="@+id/poi_detail_location_name_edit_text"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_point_of_interest_detail"
+        android:layout_marginLeft="16dp" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Pista de Skate Santa Felicia"
+        android:ems="10"
+        android:id="@+id/poi_detail_location_name_edit_text"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/poi_detail_image_view"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_point_of_interest_detail"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/poi_detail_location_name_text_view"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:text="Latitude:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/poi_detail_location_latitute_text_view"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_point_of_interest_detail"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/poi_detail_location_latitude_edit_text" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="9.0909"
+        android:ems="10"
+        android:id="@+id/poi_detail_location_latitude_edit_text"
+        android:inputType="numberDecimal"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_point_of_interest_detail"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/poi_detail_location_latitute_text_view"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/poi_detail_location_name_edit_text" />
+
+    <TextView
+        android:text="Longitude:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/poi_detail_location_longitude_text_view"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_point_of_interest_detail"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/poi_detail_location_longitude_edit_text" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:text="21.0000"
+        android:ems="10"
+        android:id="@+id/poi_detail_location_longitude_edit_text"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_point_of_interest_detail"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/poi_detail_location_longitude_text_view"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/poi_detail_location_latitude_edit_text" />
+
+    <EditText
+        android:layout_width="322dp"
+        android:layout_height="0dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/poi_detail_location_description"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_point_of_interest_detail"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_point_of_interest_detail"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/poi_detail_location_longitude_edit_text"
+        android:text='A Catedral de São Carlos ou Catedral São Carlos Borromeu está localizada na Praça Dom José Marcondes Homem de Melo, em São Carlos (São Paulo). Com uma cúpula com mais de 70 metros de altura e 30 metros de diâmetro, é uma réplica arquitetônica da Basílica de São Pedro no Vaticano. A catedral está construída no local onde se ergueu a primeira capela, entre as ruas Conde do Pinhal e Treze de Maio, na área central. O projeto é do professor Ernfried Frick e conta com vitrais de Helmar, os altares são em mármore carrara e a Via Sacra foi executada pela artista de São Carlos "Almira Ragonesi Bruno". A imagem de São Carlos Borromeu da época de fundação da cidade, com a cabeça e mãos esculpidas em madeira, está na Catedral.'
+        app:layout_constraintBottom_toBottomOf="@+id/activity_point_of_interest_detail" />
+
+</android.support.constraint.ConstraintLayout>

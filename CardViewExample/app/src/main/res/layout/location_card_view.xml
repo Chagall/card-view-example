@@ -6,10 +6,10 @@
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="300dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginBottom="5dp"
-    android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
     card_view:cardElevation="5dp"
     card_view:cardCornerRadius="10dp">
 
@@ -53,10 +53,10 @@
             android:textStyle="bold"
             android:text="@string/memorial_description"
             android:ellipsize="middle"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
             fontPath="fonts/Roboto-Regular.ttf"/>
 
         <RatingBar
@@ -67,9 +67,9 @@
             android:numStars="5"
             android:rating="5"
             android:stepSize=".5"
-            android:layout_marginBottom="5dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginLeft="8dp"/>
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp" />
 
         <TextView
             android:id="@+id/card_view_show_more"
@@ -80,6 +80,9 @@
             android:textAlignment="center"
             android:textStyle="bold"
             android:textSize="16sp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
             fontPath="fonts/Roboto-Regular.ttf"/>
     </LinearLayout>
 
