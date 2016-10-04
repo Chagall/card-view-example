@@ -2,10 +2,13 @@ package com.pereira.fabio.cardviewexample;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RatingBar;
+import android.widget.Toast;
 
 public class PointOfInterestDetailActivity extends AppCompatActivity {
 
@@ -16,6 +19,7 @@ public class PointOfInterestDetailActivity extends AppCompatActivity {
     EditText poiDescription;
     RatingBar poiRatingBar;
     Bundle poiDetailActivityBundle;
+    FloatingActionButton poiFab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,24 @@ public class PointOfInterestDetailActivity extends AppCompatActivity {
         poiLongitude = (EditText) findViewById(R.id.poi_detail_location_longitude_edit_text);
         poiDescription = (EditText) findViewById(R.id.poi_detail_location_description);
         poiRatingBar = (RatingBar) findViewById(R.id.poi_detail_rating_bar);
+        poiFab = (FloatingActionButton) findViewById(R.id.poi_detail_location_fab);
+
+        poiName.setEnabled(false);
+        poiLatitude.setEnabled(false);
+        poiLongitude.setEnabled(false);
+        poiDescription.setEnabled(false);
+
+        poiFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String camposEditaveis = "Campos editaveis: " + String.valueOf(!poiName.isEnabled());
+                Toast.makeText(getBaseContext(), camposEditaveis, Toast.LENGTH_SHORT).show();
+                poiName.setEnabled(!poiName.isEnabled());
+                poiLatitude.setEnabled(!poiLatitude.isEnabled());
+                poiLongitude.setEnabled(!poiLongitude.isEnabled());
+                poiDescription.setEnabled(!poiDescription.isEnabled());
+            }
+        });
     }
 
     private void initViewContents(){
