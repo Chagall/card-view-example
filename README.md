@@ -1,7 +1,5 @@
 # Card View Example
 
-##Card View usage example
-
 This repository contains a simple AndroidStudio project with a custom built CardView xml layout, and an Activity that shows it.
 
 The sole purpouse of this repository is give an example of how a CardView is built and how you can show it on screen as part of an activity.
